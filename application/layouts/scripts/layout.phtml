@@ -1,0 +1,86 @@
+<?
+$this->headTitle()->setSeparator(' - ');
+$this->headTitle('Winning Moves Test');
+echo $this->doctype('HTML5'); 
+?>
+<html lang="en">
+    <head>
+    <? echo $this->headMeta()->setCharset( 'UTF-8' ); ?>
+    <? echo $this->headTitle(); ?>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <? echo $this->headLink()->prependStylesheet($this->baseUrl().'/css/site.css')
+                             ->prependStylesheet($this->baseUrl()."/bootstrap/css/bootstrap-theme.css")
+                             ->prependStylesheet($this->baseUrl()."/bootstrap/css/bootstrap.css")
+                             ->prependStylesheet($this->baseUrl()."/css/normalize.css");?>
+    
+    <? echo $this->headScript()->prependFile($this->baseUrl().'/js/main.js')
+                                ->prependFile($this->baseUrl()."/bootstrap/js/bootstrap.js")
+                                ->prependFile('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'); ?>
+    
+    </head>
+    <body>
+        <div class="navbar navbar-inverse">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/index">Winning Moves</a>
+              </div>
+              <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="/index">Home</a></li>
+                  <li>
+                      <div class="btn-group" style="margin-top: 17px;">
+                        <button type="button" class="dropdown-toggle" data-toggle="dropdown">
+                          Feeds <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/index/add-rss">Add Feed</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/index/view-rss">View All</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/index/view-rss/favs/yes">View Favs</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/index/view-rss/domain/yes">View By Domain</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/index/view-rss/combo/yes">View By Domain & Fav</a></li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="btn-group" style="margin-top: 17px;">
+                        <button type="button" class="dropdown-toggle" data-toggle="dropdown">
+                          User Panel <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="/users/index">View users</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/users/add">Add user</a></li>
+                        </ul>
+                      </div>
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <? if(!Zend_Auth::getInstance()->hasIdentity()){?>
+                        <li><a href="/auth/login">Login</a></li>
+                    <? }else{?>
+                        <li><a href="/auth/logout">Logout</a></li>
+                    <? }?>
+                </ul>
+              </div><!--/.nav-collapse -->
+            </div>
+        </div>
+        <div class="content container">
+            <?
+            echo $this->layout()->content; 
+            ?>
+        </div>
+        
+        <div class="foot container">Created By Winning Moves</div>
+    </body>
+</html>
