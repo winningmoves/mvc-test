@@ -48,3 +48,6 @@ mvc-test
     <li>Indepth understanding of HTML</li>
     <li>An understanding of Twitter Bootsrap</li>
 </ol>
+
+<b>Please remeber, this test is designed to see how you approach a develoment project.</b><br>
+<b>Their is NO one correct answer, only solutions too a problem. so give it a bash.</b>
