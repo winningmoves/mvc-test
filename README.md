@@ -1,7 +1,7 @@
 mvc-test
 ========
 
-Set-up<br>
+<b>Set-up</b>
 <ol>
     <li>Download this Repo. Demonstrate the use of 'git'.
     <li>Open in Netbeans, ready to start.
@@ -9,7 +9,7 @@ Set-up<br>
     <li>.htaccess file needs to be created.
 </ol>
 
-Tasks<br>
+<b>Tasks</b>
 <ol>
     <li>Create Zend Forms, for login, add user, add feed and select domain.
     <li>Create Database to store user credentials, and RSS feeds.
@@ -22,4 +22,29 @@ Tasks<br>
     <li>Add ability to select favourites (could use ajax here).
     <li>display only favourites, display by domain.
     <li>Paginate RSS results (could use partials here).
+</ol>
+
+<b>Must show</b>
+<ol>
+    <li>An understanding of MVC</li>
+    <li>An understanding of OOP</li>
+    <li>An understanding of Zend Framework
+        <ul>
+            <li>ACL</li>
+            <li>Bootstrap</li>
+            <li>Plugins</li>
+            <li>Helpers</li>
+        </ul>
+    </li>
+    <li>An understanding of MYSQL
+        <ul>
+            <li>CRUD</li>
+        </ul>
+    </li>
+    <li>Usage of jQuery/javascript</li>
+    <li>Understanding of Ajax principles</li>
+    <li>XML structure and parsing</li>
+    <li>Indepth understanding of CSS</li>
+    <li>Indepth understanding of HTML</li>
+    <li>An understanding of Twitter Bootsrap</li>
 </ol>
