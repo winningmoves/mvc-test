@@ -61,7 +61,22 @@ class IndexController extends Zend_Controller_Action
             }
         }else{
             $this->view->h1 = "All Feeds";
-            $this->view->xml = $db_feeds->getAllFeeds();
+            
+            $paginator = new Zend_Paginator(new Zend_Paginator_Adapter_Array($db_feeds->getAllFeeds()));
+            
+            $page = $request->page;
+        
+            if($page === "all"){
+                $all = $paginator->getTotalItemCount();
+                $paginator->setItemCountPerPage($all);
+                $this->view->controls = FALSE;
+            }else{
+                $paginator->setItemCountPerPage(15);
+                $paginator->setCurrentPageNumber($page);
+                $this->view->controls = TRUE;
+            }
+
+            $this->view->xml = $paginator;
         }
     }
     

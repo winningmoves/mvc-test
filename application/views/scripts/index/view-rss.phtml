@@ -13,7 +13,15 @@
         <? echo $this->domains;?>
         <br>
     <? }?>
-    
+        
+    <? 
+    $ac = $this->controllerAction();
+    if($this->controls){?>
+        <? echo $this->paginationControl($this->xml, 'Sliding', 'partials/pagination_control_top.phtml', array("controller"=>$ac['controller'], "action"=>$ac['action'])); ?>
+    <? }else{?>
+        <a style="position: absolute; top: 0px; right: 0px;" href="<? echo $this->url(array("controller"=>$ac['controller'], "action"=>$ac['action'], "page"=>1)); ?>">Paginate</a>
+    <? }?>
+        
     <table class="table-bordered table-responsive table-striped">
         <tr>
             <th style="width: 10%;">Title</th>
@@ -33,6 +41,10 @@
             </tr>
     <? }?>
     </table>
+        
+        <? if($this->controls){?>
+            <? echo $this->paginationControl($this->xml, 'Sliding', 'partials/pagination_control_bottom.phtml'); ?>
+        <? }?>
 </div>
 
 <script>

@@ -1,0 +1,31 @@
+<!--
+See http://developer.yahoo.com/ypatterns/pattern.php?pattern=searchpagination
+-->
+ 
+<?php if ($this->pageCount): ?>
+<div class="paginationControl">
+    <?php echo $this->firstItemNumber; ?> - <?php echo $this->lastItemNumber; ?> of <?php echo $this->totalItemCount; ?>
+    <br>
+    
+    <!-- Previous page link -->
+    <?php if (isset($this->previous)): ?>
+      <a href="<?php echo $this->url(array('page' => $this->previous)); ?>">
+        &lt; Previous
+      </a> |
+    <?php else: ?>
+      <span class="disabled">&lt; Previous</span> |
+    <?php endif; ?>
+ 
+    <!-- Next page link -->
+    <?php if (isset($this->next)): ?>
+      <a href="<?php echo $this->url(array('page' => $this->next)); ?>">
+        Next &gt;
+      </a>
+    <?php else: ?>
+      <span class="disabled">Next &gt;</span>
+    <?php endif; ?>
+      
+      
+      <a style="position: absolute; top: 0px; right: 0px;" href="<? echo $this->url(array("controller"=>$this->controller, "action"=>$this->action, "page"=>"all")); ?>">Show All</a>
+</div>
+<?php endif; ?>
