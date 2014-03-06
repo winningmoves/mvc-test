@@ -1,23 +1,9 @@
 <?
-$this->headTitle()->setSeparator(' - ');
-$this->headTitle('Winning Moves Test');
 echo $this->doctype('HTML5'); 
 ?>
 <html lang="en">
     <head>
-    <? echo $this->headMeta()->setCharset( 'UTF-8' ); ?>
-    <? echo $this->headTitle(); ?>
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <? echo $this->headLink()->prependStylesheet($this->baseUrl().'/css/site.css')
-                             ->prependStylesheet($this->baseUrl()."/bootstrap/css/bootstrap-theme.css")
-                             ->prependStylesheet($this->baseUrl()."/bootstrap/css/bootstrap.css")
-                             ->prependStylesheet($this->baseUrl()."/css/normalize.css");?>
-    
-    <? echo $this->headScript()->prependFile($this->baseUrl().'/js/main.js')
-                                ->prependFile($this->baseUrl()."/bootstrap/js/bootstrap.js")
-                                ->prependFile('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'); ?>
     
     </head>
     <body>
