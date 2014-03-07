@@ -14,7 +14,7 @@ mvc-test
     </ul>
     
 <b>This test is designed to see how you approach a development project.
-<b>There is NO one correct answer, only solutions too a problem. so give it a bash.</b></p>
+<b>There is NO one correct answer, only solutions to a problem, so give it a bash.</b></p>
 
 <b>Set-up</b>
 <ol>
