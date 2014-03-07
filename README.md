@@ -63,3 +63,5 @@ mvc-test
     <li>Indepth understanding of HTML</li>
     <li>An understanding of Twitter Bootsrap</li>
 </ol>
+
+<p>Feel free to either do a pull request, send a zip to developers@winningmoves.com or your send a zip to your recruitment agent</p>
