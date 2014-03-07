@@ -16,7 +16,7 @@ mvc-test
 <ol>
     <li>Download this Repo. Demonstrate the use of 'git'.
     <li>Open in Netbeans, ready to start.
-    <li>Set-up development environment. (XAMPP, MAMPP, Virtual machine, etc).
+    <li>Set-up development environment. (XAMPP, MAMP, Virtual machine, etc).
 </ol>
 
 <b>Tasks</b>
