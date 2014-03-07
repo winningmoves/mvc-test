@@ -1,17 +1,20 @@
 mvc-test
 ========
 <b>Background</b>
-<p>The purpose of this test is to create a mini project which showcases your understanding of the technologies we use.</p>
+<p>The purpose of this test is to create a mini project that showcases your understanding of the technologies we use at Winning Moves.</p>
 <p><b>Your brief is:</b><br>
-    A client would like the ability to search the web for RSS feeds and enter them into their own website which then stores the address<br>
-    and feeds into a database.  They would not like this accesible by everyone, so need user accounts to set up and restricted.<br>
-    It is a must that no duplicate stories are stored in database as space is limited. The ability to perform a wide range of tasks on the stored feeds would<br>
-    also be expected. The client believes they should be able to select favourite items from feeds, and view only these favourites if<br>
-    they decide. If possible the ability to search for feeds based on the domain they came from should also be made available.<br>
-    This project needs to be scalable, so think dynamic.<br>
-    And must work on all devices so responsive is a must.<br>
-<b>Please remeber, this test is designed to see how you approach a develoment project.</b><br>
-<b>Their is NO one correct answer, only solutions too a problem. so give it a bash.</b></p>
+    Update the existing code in this repository to allow authenticated users to add their own RSS feeds, which only they can view.
+    
+    Users should also be able to: 
+    <ul>
+        <li>Navigate between the different feeds based on the domain they came from</li>
+        <li>Favourite individual news items from feeds</li>
+        <li>View only the favourited news items from all feeds</li>
+        <li>View the RSS tool on desktops, tablets or mobile phones</li>
+    </ul>
+    
+<b>This test is designed to see how you approach a development project.
+<b>There is NO one correct answer, only solutions too a problem. so give it a bash.</b></p>
 
 <b>Set-up</b>
 <ol>
