@@ -64,4 +64,4 @@ mvc-test
     <li>An understanding of Twitter Bootsrap</li>
 </ol>
 
-<p>Feel free to either do a pull request, send a zip to developers@winningmoves.com or your send a zip to your recruitment agent</p>
+<p><b>Feel free to either do a pull request OR send a zip to developers@winningmoves.com OR your send a zip to your recruitment agent.</b></p>
