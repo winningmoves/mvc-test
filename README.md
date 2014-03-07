@@ -9,6 +9,7 @@ mvc-test
     also be expected. The client believes they should be able to select favourite items from feeds, and view only these favourites if<br>
     they decide. If possible the ability to search for feeds based on the domain they came from should also be made available.<br>
     This project needs to be scalable, so think dynamic.<br>
+    And must work on all devices so responsive is a must.<br>
 <b>Please remeber, this test is designed to see how you approach a develoment project.</b><br>
 <b>Their is NO one correct answer, only solutions too a problem. so give it a bash.</b></p>
 
